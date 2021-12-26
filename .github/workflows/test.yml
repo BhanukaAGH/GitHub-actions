@@ -8,4 +8,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - run: node -v
+      - name: Build the project
+        run: npm build
+      - name: Setup finish
+        run: echo "hurray!"
